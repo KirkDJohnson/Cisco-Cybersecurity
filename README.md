@@ -23,7 +23,7 @@ Once connected to the terminal and logging into the admin account, created two s
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Created the two zones for the firewall: PUBLIC and PRIVATE   <br/>
+Created a specfic access list (101) allowing traffic from the 192.163.3.0/24 subnet and assigned it to a class-map <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />

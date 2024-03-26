@@ -1,51 +1,42 @@
-<h1>Cisco</h1>
+<h1>Cisco Zone-Based Policy Firewall Creation</h1>
 
 
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+Used SSH to remote into a router to create a Zone-Based Policy firewall. Created zones that would pass, drop, or filter traffic from within the local network and when interacting with the public web. Within the Zone-Based Policy firewall, I allow created an access list which would allow ip ranges from a given subnet with an implicit deny all for other traffic. 
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Cisco IOS</b> 
+- <b>Cisco Router</b>
 
-<h2>Environments Used </h2>
+<h2>Environment</h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Cisco Packet Tracer</b> 
 
-<h2>Program walk-through:</h2>
+<h2>Coding/Lab Overview</h2>
 
 <p align="center">
-Launch the utility: <br/>
+Once connected to the terminal and logging into the admin account, created two security zones: PUBLIC and PRIVATE<br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
+Created the two zones for the firewall: PUBLIC and PRIVATE   <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
+Created a policy-map and class type to define the security zones <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
+ Added the inspect polciy map to all outgoing traffic to the outgoing router's port and the other securoty zonef or traffic that stay in the LAN <br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+  <br/>
+
 
 <!--
  ```diff

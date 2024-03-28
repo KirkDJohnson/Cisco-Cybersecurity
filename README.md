@@ -1,4 +1,4 @@
-<h1>Various Hands on labs and short cybersecurity and networking labs</h1>
+<h1>Various hands-on short cybersecurity and networking labs</h1>
 
 
 

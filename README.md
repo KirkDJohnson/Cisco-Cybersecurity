@@ -20,7 +20,7 @@ Used SSH to remote into a router to create a Zone-Based Policy firewall. Created
 
 <p align="center">
 Once connected to the terminal and logging into the admin account, created two security zones: PUBLIC and PRIVATE<br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/KirkDJohnson/Cisco-Cybersecurity/assets/164972007/7f7d94dd-4ee4-44d8-9956-b1cfcefe9e8c" 
 <br />
 <br />
 Created a specfic access list (101) allowing traffic from the 192.163.3.0/24 subnet and assigned it to a class-map <br/>
@@ -36,6 +36,24 @@ Created a policy-map and class type to define the security zones <br/>
 <br />
 <br />
   <br/>
+Configuring a short access-list on a cisco router allowing traffic from two IPs and denying/dropping all other traffic<br/>
+<img src="https://github.com/KirkDJohnson/Cisco-Cybersecurity/assets/164972007/8296ccfc-db1f-4179-ae47-a17bcd0c9de6" alt="Cisco Work"/>
+<br />
+<br />
+Configured a cisco termainal to be able to be SSH'd into with a RSA encryption key and admin account<br/>
+<img src="https://github.com/KirkDJohnson/Cisco-Cybersecurity/assets/164972007/10ce9dd6-bfb7-45fe-ba71-30d2785a93df" alt="Cisco Work"/>
+<br />
+<br />
+ TEXT<br/>
+<img src="" alt="Cisco Work"/>
+<br />
+<br />
+TEXT<br/>
+<img src="" alt="Cisco Work"/>
+<br />
+<br />
+<h2>Thoughts</h2>
+When I first begun to pivot and learn about cybersecurity I took every single cisco cybersecurity module, while it was largely focused on cisco hardware it still gave me a great foundation of concepts and some hands on labs. It was so early in my time learning about cybersecurity I had no idea that I would should save the work and labs I do to add to a portfolio for later, so a considerable amount of work I did was lost. But looking at the Certifications page and my Credly Profile the amount of Cisco Badges for completeing learning paths is immense. The labs I remember to be actually very difficult and having to use outside sources quite a bit because I was new to network fundamentals and cybersecurity. 
 
 
 <!--
